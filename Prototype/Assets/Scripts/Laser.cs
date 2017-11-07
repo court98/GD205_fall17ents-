@@ -29,10 +29,7 @@ public class Laser : MonoBehaviour {
 				//add force to a random 3D direction (using insideunitsphere) to the rigidbody of the thing our beam hit if left click
 				beamHit.rigidbody.AddForce(Random.insideUnitSphere * 5000f); 
 			}
-			if(Input.GetMouseButtonDown(1)){
-				//instantiate a new prefab at the point in which our beam hit if you right click
-				Instantiate (prefab, beamHit.point, Quaternion.identity);
-			}
+
 			if (Input.GetMouseButtonDown (2)) {
 				//destroy the gameobject whose collider you hit if you middle click
 				Destroy(beamHit.collider.gameObject);
