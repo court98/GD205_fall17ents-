@@ -134,7 +134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 455786779}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97362710 stripped
 GameObject:
@@ -256,48 +256,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09ff18da3b30b49c5a8dcfbb65c59352, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &351690410
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 455786779}
-    m_Modifications:
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.0039978027
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.07999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.33099937
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144854050835952, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f73e9208a1c1b4d26bd4d27881bd2c82, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &363324824
 Prefab:
@@ -537,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ac2cf2db92041b6b9874164dc95679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thebullet: {fileID: 1400819213}
+  thebullet: {fileID: 0}
   barrelEnd: {fileID: 92932455}
   bulletSpeed: 25
   despawnTime: 3
@@ -1279,7 +1237,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 455786779}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1203176619
 MonoBehaviour:
@@ -1369,11 +1327,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1869070545}
   thrust: 3
---- !u!1 &1400819213 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1548996030905714, guid: f73e9208a1c1b4d26bd4d27881bd2c82,
-    type: 2}
-  m_PrefabInternal: {fileID: 351690410}
 --- !u!1 &1611080511 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1529971214805442, guid: 09ff18da3b30b49c5a8dcfbb65c59352,
