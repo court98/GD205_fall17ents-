@@ -16,7 +16,7 @@ public class Spawn : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) { //if the left mouse button is being pressed during this frame...
 			GameObject newBullet =	Instantiate (prefab, spawnPoint.position, spawnPoint.rotation) as GameObject; 
-			newBullet.GetComponent<Rigidbody> ().AddForce(newBullet.transform.forward * 1000f);//instantiate(spawn) our prefab at spawnPoint.position with a rotation of Quaternion.identity("no rotation")
+			newBullet.GetComponent<Rigidbody> ().AddForce(newBullet.transform.forward * 5000f);//instantiate(spawn) our prefab at spawnPoint.position with a rotation of Quaternion.identity("no rotation")
 		}
 
 
