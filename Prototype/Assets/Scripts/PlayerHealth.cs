@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		currentHealth = MaxHealth;
+		InvokeRepeating ("DecreaseHealth", 5f, 5f);
 	}
 	
 	// Update is called once per frame
@@ -20,6 +21,7 @@ public class PlayerHealth : MonoBehaviour {
 
 		currentHealth -= 5f;
 		float calcHealth = currentHealth / MaxHealth;
+		SetHealthBar (calcHealth);
 
 	}
 
