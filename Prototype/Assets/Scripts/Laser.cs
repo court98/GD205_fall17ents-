@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour {
 
-
+	public  EnemyDamage _EnemyDamage;
 	public GameObject prefab;
+	public float TheDistance;
+	public float MaxDistance;
 
 	void Start () {
 
@@ -13,7 +15,7 @@ public class Laser : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		
 		//declare a new ray and assign it to cast the ray from the cursor position into our scene 
 		Ray beam = Camera.main.ScreenPointToRay (Input.mousePosition);
 
@@ -27,12 +29,18 @@ public class Laser : MonoBehaviour {
 			Debug.Log ("you hit something at" + beamHit.point);
 			if (Input.GetMouseButtonDown (0)) {
 				//add force to a random 3D direction (using insideunitsphere) to the rigidbody of the thing our beam hit if left click
-				beamHit.rigidbody.AddForce(Random.insideUnitSphere * 5000f); 
+				beamHit.rigidbody.AddForce(Random.insideUnitSphere * 5000f);
+
 			}
 
 			if (Input.GetMouseButtonDown (2)) {
 				//destroy the gameobject whose collider you hit if you middle click
 				Destroy(beamHit.collider.gameObject);
+
+				if(TheDistance<MaxDistance){
+					_EnemyDamage.ouchthathurt ();
+
+				}
 			}
 
 		}
