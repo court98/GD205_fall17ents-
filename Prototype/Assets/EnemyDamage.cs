@@ -12,6 +12,13 @@ public class EnemyDamage : MonoBehaviour {
 		print("ouchthathurtYo"+EnemyHealth);
 		TheEnemyisDead();
 	}
+
+	void OnCollisionEnter(Collision GhostHit){
+		if (GhostHit.gameObject.tag == "Bullet") {
+			ouchthathurt ();
+
+		}
+	}
 	void TheEnemyisDead(){
 
 		Destroy(gameObject);

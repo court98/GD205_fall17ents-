@@ -17,6 +17,10 @@ public class Damageplayer : MonoBehaviour {
 		if(_collision.gameObject.tag == "Enemy"){
 			PlayerHealth -= damage;
 			print ("enemyTouchedMe"+PlayerHealth);
+
+			if(PlayerHealth <= 0){
+				Destroy (gameObject);
+			}
 		}
 	}
 
