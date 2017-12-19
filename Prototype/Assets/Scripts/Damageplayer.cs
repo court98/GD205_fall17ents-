@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Damageplayer : MonoBehaviour {
 	public int PlayerHealth = 100;
@@ -19,9 +20,16 @@ public class Damageplayer : MonoBehaviour {
 			print ("enemyTouchedMe"+PlayerHealth);
 
 			if(PlayerHealth <= 0){
+				gameOver ();
 				Destroy (gameObject);
+
 			}
+
+
+
 		}
 	}
-
+	void gameOver(){
+		SceneManager.LoadScene ("GameOver");
+	}
 }
