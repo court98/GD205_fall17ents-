@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour {
-
+	
 	int EnemyHealth =100;
 	int TheDamage = 10;
 
@@ -24,4 +24,6 @@ public class EnemyDamage : MonoBehaviour {
 		Destroy(gameObject);
 
 	}
+
 }
+
